@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ScrollView 
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+            <!-- 头像，姓名 -->
+            <LinearLayout 
+                android:paddingLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageButton 
+                    android:id="@+id/btn_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="center"
+                    android:background="#ffffff"
+                    android:src="@drawable/tou_xiang1"/>
+                <EditText 
+                    android:id="@+id/et_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:hint="姓名"/>
+            </LinearLayout>
+            
+            <!-- 手机 -->
+            <LinearLayout 
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="手机:"
+                    android:textSize="20dp"/>
+                <EditText 
+                    android:id="@+id/et_mobilephonenum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="手机"
+                    android:phoneNumber="true" />
+            </LinearLayout>
+            <!-- 办公室电话 -->
+            <LinearLayout
+                android:paddingLeft="10dp" 
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="办公室电话:"
+                    android:textSize="20dp"/>
+                <EditText 
+                    android:id="@+id/et_officephonenum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="办公室电话"
+                    android:phoneNumber="true" />
+            </LinearLayout>
+            <!-- 家庭电话 -->
+            <LinearLayout
+                android:paddingLeft="10dp" 
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="家庭电话:"
+                    android:textSize="20dp"/>
+                <EditText 
+                    android:id="@+id/et_familyphonenum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="家庭电话"
+                    android:phoneNumber="true" />
+            </LinearLayout>
+            <!-- 职务 -->
+            <LinearLayout
+                android:paddingLeft="10dp" 
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="职务职称:"
+                    android:textSize="20dp"/>
+                <EditText 
+                    android:id="@+id/et_position"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="职务职称"/>
+            </LinearLayout>
+            <!-- 单位名称-->
+            <LinearLayout
+                android:paddingLeft="10dp" 
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="单位名称:"
+                    android:textSize="20dp"/>
+                <EditText 
+                    android:id="@+id/et_company"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="单位名称" />
+            </LinearLayout>
+            <!-- 地址 -->
+            <LinearLayout 
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="地址:"
+                    android:textSize="20dp"/>
+                <EditText 
+                    android:id="@+id/et_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="地址" />
+            </LinearLayout>
+            <!-- 邮政编码 -->
+            <LinearLayout 
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="邮政编码:"
+                    android:textSize="20dp"/>
+                <EditText 
+                    android:id="@+id/et_zipcode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="邮政编码"
+                    android:phoneNumber="true" />
+            </LinearLayout>
+            <!-- 邮箱 -->
+            <LinearLayout 
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="E-mail:"
+                    android:textSize="20dp"/>
+                <EditText 
+                    android:id="@+id/et_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="e-mail" />
+            </LinearLayout>
+            <!-- 其他联系方式 -->
+            <LinearLayout 
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="其他联系方式:"
+                    android:textSize="20dp"/>
+                <EditText 
+                    android:id="@+id/et_other"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="其他" />
+            </LinearLayout>
+            <!-- 备注 -->
+            <LinearLayout 
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="备注:"
+                    android:textSize="20dp"/>
+                <EditText 
+                    android:id="@+id/et_remark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="备注" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+    
+    <LinearLayout 
+        android:paddingLeft="10dp"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="保存" />
+
+        <Button 
+            android:id="@+id/btn_return"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="返回"/>
+    </LinearLayout>
+    
+</LinearLayout>

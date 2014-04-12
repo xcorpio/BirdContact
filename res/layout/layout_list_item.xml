@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <!-- 头像 -->
+    <ImageView 
+        android:id="@+id/item_userimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+    <!-- 信息  -->
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:paddingLeft="10dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@id/item_userimage"
+	    android:layout_alignParentRight="true">
+	    
+	    <!-- 姓名 -->
+	    <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="25dp">
+	        <TextView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:text="姓名:"
+	            android:textSize="17sp"
+	            android:layout_weight="5" />
+	        <TextView 
+	            android:id="@+id/item_showname"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:textSize="17sp"
+	            android:layout_weight="1" />
+	    </LinearLayout>
+	    <!-- 电话 -->
+	    <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="25dp">
+	        <TextView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:text="手机:"
+	            android:textSize="17sp"
+	            android:layout_weight="5" />
+	        <TextView 
+	            android:id="@+id/item_showphone"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:textSize="17sp"
+	            android:layout_weight="1" />
+	    </LinearLayout>
+	</LinearLayout>
+	<!-- 显示标记 -->
+	<ImageView 
+	    android:id="@+id/user_mark"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/checkmark"
+	    android:layout_marginRight="10dp"
+	    android:visibility="gone"/>
+</RelativeLayout>
